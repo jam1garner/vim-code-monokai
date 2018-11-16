@@ -31,82 +31,180 @@ fun! <sid>hi(group, fg, bg, attr, sp)
   endif
 endfun
 
-" ------------------
-" Color definitions:
-" ------------------
+"hi Cursor ctermfg=235 ctermbg=231 cterm=NONE guifg=#272822 guibg=#f8f8f0 gui=NONE
+"hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
+"hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
+"hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
+"hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
+"hi LineNr ctermfg=102 ctermbg=237 cterm=NONE guifg=#90908a guibg=#3c3d37 gui=NONE
+"hi MatchParen ctermfg=197 ctermbg=NONE cterm=underline guifg=#f92672 guibg=NONE gui=underline
+"hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
+"hi StatusLineNC ctermfg=231 ctermbg=241 cterm=NONE guifg=#f8f8f2 guibg=#64645e gui=NONE
+"hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+"hi PmenuSel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
+"hi IncSearch term=reverse cterm=reverse ctermfg=193 ctermbg=16 gui=reverse guifg=#C4BE89 guibg=#000000
+"hi Search term=reverse cterm=NONE ctermfg=231 ctermbg=24 gui=NONE guifg=#f8f8f2 guibg=#204a87
+"hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+"hi Folded ctermfg=242 ctermbg=235 cterm=NONE guifg=#75715e guibg=#272822 gui=NONE
+"hi SignColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#272822 gui=NONE
+hi Boolean ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi Character ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi Comment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#75715e guibg=NONE gui=NONE
+hi Conditional ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Constant ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi Define ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f8f8f2 guibg=#46830c gui=bold
+hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b0807 guibg=NONE gui=NONE
+hi DiffChange ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=#243955 gui=NONE
+hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f8f8f2 guibg=#204a87 gui=bold
+hi ErrorMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
+hi WarningMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
+hi Float ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi Function ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Label ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi NonText ctermfg=59 ctermbg=236 cterm=NONE guifg=#49483e guibg=#31322c gui=NONE
+hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi Operator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
+hi SpecialComment ctermfg=242 ctermbg=NONE cterm=NONE guifg=#75715e guibg=NONE gui=NONE
+hi SpecialKey ctermfg=59 ctermbg=237 cterm=NONE guifg=#49483e guibg=#3c3d37 gui=NONE
+hi Statement ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi StorageClass ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi String ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi Tag ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=NONE gui=bold
+hi Todo ctermfg=95 ctermbg=NONE cterm=inverse,bold guifg=#75715e guibg=NONE gui=inverse,bold
+hi Type ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi Underlined ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+hi rubyClass ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi rubyFunction ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+hi rubyInterpolationDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi rubySymbol ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi rubyConstant ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi rubyStringDelimiter ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi rubyBlockParameter ctermfg=208 ctermbg=NONE cterm=NONE guifg=#fd971f guibg=NONE gui=italic
+hi rubyInstanceVariable ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi rubyInclude ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi rubyGlobalVariable ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi rubyRegexp ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi rubyRegexpDelimiter ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi rubyEscape ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi rubyControl ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi rubyClassVariable ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi rubyOperator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi rubyException ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi rubyPseudoVariable ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi rubyRailsUserClass ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi rubyRailsARAssociationMethod ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi rubyRailsARMethod ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi rubyRailsRenderMethod ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi rubyRailsMethod ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi erubyDelimiter ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi erubyComment ctermfg=95 ctermbg=NONE cterm=NONE guifg=#75715e guibg=NONE gui=NONE
+hi erubyRailsMethod ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+"hi htmlTag ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+"hi htmlEndTag ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+"hi htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+"hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+"hi htmlSpecialChar ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi javaScriptFunction ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic
+hi javaScriptRailsFunction ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi yamlKey ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
+hi yamlAnchor ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi yamlAlias ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi yamlDocumentHeader ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
+hi cssURL ctermfg=208 ctermbg=NONE cterm=NONE guifg=#fd971f guibg=NONE gui=italic
+hi cssFunctionName ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi cssColor ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi cssPseudoClassId ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+hi cssClassName ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NONE
+hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
+hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
+hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
-" Terminal colors (base16):
-let s:cterm00 = "00"
-let s:cterm03 = "08"
-let s:cterm05 = "07"
-let s:cterm07 = "15"
-let s:cterm08 = "01"
-let s:cterm0A = "03"
-let s:cterm0B = "02"
-let s:cterm0C = "06"
-let s:cterm0D = "04"
-let s:cterm0E = "05"
-if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
+"" ------------------
+"" Color definitions:
+"" ------------------
+"
+"" Terminal colors (base16):
+let s:cterm00 = '00'
+let s:cterm03 = '08'
+let s:cterm05 = '07'
+let s:cterm07 = '15'
+let s:cterm08 = '01'
+let s:cterm0A = '03'
+let s:cterm0B = '02'
+let s:cterm0C = '06'
+let s:cterm0D = '04'
+let s:cterm0E = '05'
+if exists('base16colorspace') && base16colorspace == '256'
+  let s:cterm01 = '18'
+  let s:cterm02 = '19'
+  let s:cterm04 = '20'
+  let s:cterm06 = '21'
+  let s:cterm09 = '16'
+  let s:cterm0F = '17'
 else
-  let s:cterm01 = "00"
-  let s:cterm02 = "08"
-  let s:cterm04 = "07"
-  let s:cterm06 = "07"
-  let s:cterm09 = "06"
-  let s:cterm0F = "03"
+  let s:cterm01 = '00'
+  let s:cterm02 = '08'
+  let s:cterm04 = '07'
+  let s:cterm06 = '07'
+  let s:cterm09 = '06'
+  let s:cterm0F = '03'
 endif
-
-" General appearance colors:
-" (some of them may be unused)
-
+"
+"" General appearance colors:
+"" (some of them may be unused)
+"
 let s:cdNone = {'gui': 'NONE', 'cterm': 'NONE', 'cterm256': 'NONE'}
 let s:cdFront = {'gui': '#D4D4D4', 'cterm': s:cterm05, 'cterm256': '188'}
 let s:cdBack = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
-
+"
 let s:cdTabCurrent = {'gui': '#1E1E1E', 'cterm': s:cterm00, 'cterm256': '234'}
 let s:cdTabOther = {'gui': '#2D2D2D', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdTabOutside = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
-
+"
 let s:cdLeftDark = {'gui': '#252526', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdLeftMid = {'gui': '#373737', 'cterm': s:cterm03, 'cterm256': '237'}
 let s:cdLeftLight = {'gui': '#3F3F46', 'cterm': s:cterm03, 'cterm256': '238'}
-
+"#75715e 
+let s:cdMonokaiComment = {'gui': '#75715e', 'cterm': s:cterm05, 'cterm256': '188'}
+"
 let s:cdPopupFront = {'gui': '#BBBBBB', 'cterm': s:cterm06, 'cterm256': '250'}
 let s:cdPopupBack = {'gui': '#2D2D30', 'cterm': s:cterm01, 'cterm256': '236'}
 let s:cdPopupHighlightBlue = {'gui': '#073655', 'cterm': s:cterm0D, 'cterm256': '24'}
 let s:cdPopupHighlightGray = {'gui': '#3D3D40', 'cterm': s:cterm03, 'cterm256': '237'}
-
+"
 let s:cdSplitLight = {'gui': '#898989', 'cterm': s:cterm04, 'cterm256': '245'}
 let s:cdSplitDark = {'gui': '#444444', 'cterm': s:cterm03, 'cterm256': '238'}
 let s:cdSplitThumb = {'gui': '#424242', 'cterm': s:cterm04, 'cterm256': '238'}
-
+"
 let s:cdCursorDarkDark = {'gui': '#222222', 'cterm': s:cterm01, 'cterm256': '235'}
 let s:cdCursorDark = {'gui': '#51504F', 'cterm': s:cterm03, 'cterm256': '239'}
 let s:cdCursorLight = {'gui': '#AEAFAD', 'cterm': s:cterm04, 'cterm256': '145'}
 let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
 let s:cdLineNumber = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
-
+"
 let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
 let s:cdDiffRedLight = {'gui': '#6F1313', 'cterm': s:cterm08, 'cterm256': '52'}
 let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '09'}
 let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
 let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
-
+"
 let s:cdSearchCurrent = {'gui': '#49545F', 'cterm': s:cterm09, 'cterm256': '239'}
 let s:cdSearch = {'gui': '#4C4E50', 'cterm': s:cterm0A, 'cterm256': '239'}
-
-" Syntax colors:
-
+"
+"" Syntax colors:
+"
 if !exists("g:codedark_conservative")
     let g:codedark_conservative=0
 endif
-
+"
 let s:cdGray = {'gui': '#808080', 'cterm': s:cterm04, 'cterm256': '08'}
 let s:cdViolet = {'gui': '#646695', 'cterm': s:cterm04, 'cterm256': '60'}
 let s:cdBlue = {'gui': '#569CD6', 'cterm': s:cterm0D, 'cterm256': '75'}
@@ -125,9 +223,9 @@ let s:cdYellow = {'gui': '#DCDCAA', 'cterm': s:cterm0A, 'cterm256': '187'}
 if g:codedark_conservative | let s:cdYellow = s:cdFront | endif
 let s:cdPink = {'gui': '#C586C0', 'cterm': s:cterm0E, 'cterm256': '176'}
 if g:codedark_conservative | let s:cdPink = s:cdBlue | endif
-
-" Vim editor colors
-"    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
+"
+"" Vim editor colors
+""    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE, SPECIAL)
 call <sid>hi('Normal', s:cdFront, s:cdBack, 'none', {})
 call <sid>hi('ColorColumn', {}, s:cdCursorDarkDark, 'none', {})
 call <sid>hi('Cursor', s:cdCursorDark, s:cdCursorLight, 'none', {})
@@ -170,115 +268,115 @@ call <sid>hi('Visual', s:cdNone, s:cdSelection, 'none', {})
 call <sid>hi('VisualNOS', s:cdNone, s:cdSelection, 'none', {})
 call <sid>hi('WarningMsg', s:cdOrange, s:cdBack, 'none', {})
 call <sid>hi('WildMenu', s:cdNone, s:cdSelection, 'none', {})
-
-call <sid>hi('Comment', s:cdGreen, {}, 'none', {})
-
-call <sid>hi('Constant', s:cdBlue, {}, 'none', {})
-call <sid>hi('String', s:cdOrange, {}, 'none', {})
-call <sid>hi('Character', s:cdOrange, {}, 'none', {})
-call <sid>hi('Number', s:cdLightGreen, {}, 'none', {})
-call <sid>hi('Boolean', s:cdBlue, {}, 'none', {})
-call <sid>hi('Float', s:cdLightGreen, {}, 'none', {})
-
-call <sid>hi('Identifier', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('Function', s:cdYellow, {}, 'none', {})
-
-call <sid>hi('Statement', s:cdPink, {}, 'none', {})
-call <sid>hi('Conditional', s:cdPink, {}, 'none', {})
-call <sid>hi('Repeat', s:cdPink, {}, 'none', {})
-call <sid>hi('Label', s:cdPink, {}, 'none', {})
-call <sid>hi('Operator', s:cdFront, {}, 'none', {})
-call <sid>hi('Keyword', s:cdPink, {}, 'none', {})
-call <sid>hi('pythonOperator', s:cdPink, {}, 'none', {})
-call <sid>hi('Exception', s:cdPink, {}, 'none', {})
-
-call <sid>hi('PreProc', s:cdPink, {}, 'none', {})
-call <sid>hi('Include', s:cdPink, {}, 'none', {})
-call <sid>hi('Define', s:cdPink, {}, 'none', {})
-call <sid>hi('Macro', s:cdPink, {}, 'none', {})
-call <sid>hi('PreCondit', s:cdPink, {}, 'none', {})
-
-call <sid>hi('Type', s:cdBlue, {}, 'none', {})
-call <sid>hi('StorageClass', s:cdBlue, {}, 'none', {})
-call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
-call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
-
-call <sid>hi('Special', s:cdFront, {}, 'none', {})
-call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
-call <sid>hi('Tag', s:cdFront, {}, 'none', {})
-call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
-call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {})
-call <sid>hi('Debug', s:cdFront, {}, 'none', {})
-
-call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
-call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
-
-call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
-
-call <sid>hi('Error', s:cdRed, {}, 'undercurl', s:cdRed)
-
-call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
-
+"
+"call <sid>hi('Comment', s:cdGreen, {}, 'none', {})
+"
+"call <sid>hi('Constant', s:cdBlue, {}, 'none', {})
+"call <sid>hi('String', s:cdOrange, {}, 'none', {})
+"call <sid>hi('Character', s:cdOrange, {}, 'none', {})
+"call <sid>hi('Number', s:cdLightGreen, {}, 'none', {})
+"call <sid>hi('Boolean', s:cdBlue, {}, 'none', {})
+"call <sid>hi('Float', s:cdLightGreen, {}, 'none', {})
+"
+"call <sid>hi('Identifier', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('Function', s:cdYellow, {}, 'none', {})
+"
+"call <sid>hi('Statement', s:cdPink, {}, 'none', {})
+"call <sid>hi('Conditional', s:cdPink, {}, 'none', {})
+"call <sid>hi('Repeat', s:cdPink, {}, 'none', {})
+"call <sid>hi('Label', s:cdPink, {}, 'none', {})
+"call <sid>hi('Operator', s:cdFront, {}, 'none', {})
+"call <sid>hi('Keyword', s:cdPink, {}, 'none', {})
+"call <sid>hi('pythonOperator', s:cdPink, {}, 'none', {})
+"call <sid>hi('Exception', s:cdPink, {}, 'none', {})
+"
+"call <sid>hi('PreProc', s:cdPink, {}, 'none', {})
+"call <sid>hi('Include', s:cdPink, {}, 'none', {})
+"call <sid>hi('Define', s:cdPink, {}, 'none', {})
+"call <sid>hi('Macro', s:cdPink, {}, 'none', {})
+"call <sid>hi('PreCondit', s:cdPink, {}, 'none', {})
+"
+"call <sid>hi('Type', s:cdBlue, {}, 'none', {})
+"call <sid>hi('StorageClass', s:cdBlue, {}, 'none', {})
+"call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
+"call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
+"
+"call <sid>hi('Special', s:cdFront, {}, 'none', {})
+"call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
+"call <sid>hi('Tag', s:cdFront, {}, 'none', {})
+"call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
+"call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {})
+"call <sid>hi('Debug', s:cdFront, {}, 'none', {})
+"
+"call <sid>hi('Underlined', s:cdNone, {}, 'underline', {})
+"call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
+"
+"call <sid>hi('Ignore', s:cdFront, {}, 'none', {})
+"
+"call <sid>hi('Error', s:cdRed, {}, 'undercurl', s:cdRed)
+"
+"call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
+"
 " HTML:
-call <sid>hi('htmlTag', s:cdGray, {}, 'none', {})
-call <sid>hi('htmlEndTag', s:cdGray, {}, 'none', {})
-call <sid>hi('htmlTagName', s:cdBlue, {}, 'none', {})
-call <sid>hi('htmlSpecialTagName', s:cdBlue, {}, 'none', {})
-call <sid>hi('htmlArg', s:cdLightBlue, {}, 'none', {})
-
+call <sid>hi('htmlTag', s:cdMonokaiComment, {}, 'none', {})
+call <sid>hi('htmlEndTag', s:cdMonokaiComment, {}, 'none', {})
+"call <sid>hi('htmlTagName', s:cdBlue, {}, 'none', {})
+"call <sid>hi('htmlSpecialTagName', s:cdBlue, {}, 'none', {})
+"call <sid>hi('htmlArg', s:cdLightBlue, {}, 'none', {})
+"
 " CSS:
-call <sid>hi('cssBraces', s:cdFront, {}, 'none', {})
-call <sid>hi('cssInclude', s:cdPink, {}, 'none', {})
-call <sid>hi('cssTagName', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssClassName', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssPseudoClass', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssPseudoClassId', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssPseudoClassLang', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssIdentifier', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('cssProp', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('cssDefinition', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('cssAttr', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssAttrRegion', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssColor', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssFunction', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssFunctionName', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssVendor', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssValueNumber', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssValueLength', s:cdOrange, {}, 'none', {})
-call <sid>hi('cssUnitDecorators', s:cdOrange, {}, 'none', {})
-
+"call <sid>hi('cssBraces', s:cdFront, {}, 'none', {})
+"call <sid>hi('cssInclude', s:cdPink, {}, 'none', {})
+"call <sid>hi('cssTagName', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssClassName', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssPseudoClass', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssPseudoClassId', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssPseudoClassLang', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssIdentifier', s:cdYellowOrange, {}, 'none', {})
+"call <sid>hi('cssProp', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('cssDefinition', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('cssAttr', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssAttrRegion', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssColor', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssFunction', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssFunctionName', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssVendor', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssValueNumber', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssValueLength', s:cdOrange, {}, 'none', {})
+"call <sid>hi('cssUnitDecorators', s:cdOrange, {}, 'none', {})
+"
 " JavaScript:
-call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
-call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
-
-" Ruby:
-call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
-
-" Golang:
-call <sid>hi('goPackage', s:cdBlue, {}, 'none', {})
-call <sid>hi('goImport', s:cdBlue, {}, 'none', {})
-call <sid>hi('goVar', s:cdBlue, {}, 'none', {})
-call <sid>hi('goConst', s:cdBlue, {}, 'none', {})
-call <sid>hi('goStatement', s:cdPink, {}, 'none', {})
-call <sid>hi('goType', s:cdBlue, {}, 'none', {})
-call <sid>hi('goSignedInts', s:cdBlue, {}, 'none', {})
-call <sid>hi('goUnsignedInts', s:cdBlue, {}, 'none', {})
-call <sid>hi('goFloats', s:cdBlue, {}, 'none', {})
-call <sid>hi('goComplexes', s:cdBlue, {}, 'none', {})
-call <sid>hi('goBuiltins', s:cdYellow, {}, 'none', {})
-call <sid>hi('goBoolean', s:cdBlue, {}, 'none', {})
-call <sid>hi('goPredefinedIdentifiers', s:cdBlue, {}, 'none', {})
-call <sid>hi('goTodo', s:cdGreen, {}, 'none', {})
-call <sid>hi('goDeclaration', s:cdBlue, {}, 'none', {})
-call <sid>hi('goDeclType', s:cdBlue, {}, 'none', {})
-call <sid>hi('goTypeDecl', s:cdBlue, {}, 'none', {})
-call <sid>hi('goTypeName', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('goVarAssign', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('goVarDefs', s:cdLightBlue, {}, 'none', {})
-call <sid>hi('goReceiver', s:cdFront, {}, 'none', {})
-call <sid>hi('goReceiverType', s:cdDarkBlue, {}, 'none', {})
-call <sid>hi('goFunctionCall', s:cdYellow, {}, 'none', {})
-call <sid>hi('goMethodCall', s:cdYellow, {}, 'none', {})
-call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('jsVariableDef', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('jsFuncArgs', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('jsRegexpString', s:cdLightRed, {}, 'none', {})
+"call <sid>hi('jsThis', s:cdBlue, {}, 'none', {})
+"
+"" Ruby:
+"call <sid>hi('rubyClassNameTag', s:cdBlueGreen, {}, 'none', {})
+"
+"" Golang:
+"call <sid>hi('goPackage', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goImport', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goVar', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goConst', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goStatement', s:cdPink, {}, 'none', {})
+"call <sid>hi('goType', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goSignedInts', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goUnsignedInts', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goFloats', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goComplexes', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goBuiltins', s:cdYellow, {}, 'none', {})
+"call <sid>hi('goBoolean', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goPredefinedIdentifiers', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goTodo', s:cdGreen, {}, 'none', {})
+"call <sid>hi('goDeclaration', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goDeclType', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goTypeDecl', s:cdBlue, {}, 'none', {})
+"call <sid>hi('goTypeName', s:cdBlueGreen, {}, 'none', {})
+"call <sid>hi('goVarAssign', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('goVarDefs', s:cdLightBlue, {}, 'none', {})
+"call <sid>hi('goReceiver', s:cdFront, {}, 'none', {})
+"call <sid>hi('goReceiverType', s:cdDarkBlue, {}, 'none', {})
+"call <sid>hi('goFunctionCall', s:cdYellow, {}, 'none', {})
+"call <sid>hi('goMethodCall', s:cdYellow, {}, 'none', {})
+"call <sid>hi('goSingleDecl', s:cdLightBlue, {}, 'none', {})
