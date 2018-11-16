@@ -1,5 +1,7 @@
-# vim-code-dark
-`vim-code-dark` is a dark **color scheme for [Vim](http://www.vim.org/)** heavily inspired by the look of the Dark+ scheme of [Visual Studio Code](https://code.visualstudio.com/). While many of the colors are same, there are additional colors for specific usage or reserved for future use. The scheme also defines specific GUI colors (e.g. popup menu) and fully supports [`vim-airline`](https://github.com/vim-airline/vim-airline).
+# vim-code-monokai
+`vim-code-monokai` is a dark **color scheme for [Vim](http://www.vim.org/)** heavily inspired by the look of the monokai scheme of [Visual Studio Code](https://code.visualstudio.com/). While many of the colors are same, there are additional colors for specific usage or reserved for future use. The scheme also defines specific GUI colors (e.g. popup menu) and fully supports [`vim-airline`](https://github.com/vim-airline/vim-airline).
+
+**Note:** This is a combination of [vim-code-dark](https://github.com/tomasiser/vim-code-dark), [vim-monokai](https://github.com/sickill/vim-monokai), and my own modifications.
 
 **:exclamation: To install and enable this colorscheme, [read installation instructions](#installation).**
 
@@ -7,23 +9,7 @@
 
 ## Screenshots
 
-### gVim / modern terminals
-![Ruby and NERDTree](https://cloud.githubusercontent.com/assets/10374559/23333137/b86efaa0-fb86-11e6-8c06-813f81c1f9bb.png)
-![Editing HTML and CSS](https://cloud.githubusercontent.com/assets/10374559/23344709/459972a2-fc81-11e6-9b50-c432d998caef.png)
-
-*Code samples [1](http://sandbox.mc.edu/~bennet/ruby/code/), [2](https://tmtheme-editor.herokuapp.com/), [`nerdtree`](https://github.com/scrooloose/nerdtree)*
-
-### Terminals with limited color support
-
-#### Fixed 256 colors
-![Terminal on Debian with 256 colors](https://cloud.githubusercontent.com/assets/10374559/23342967/e61e28c6-fc63-11e6-9ccf-d6189b9e1b61.png)
-
-#### Fixed 8/16 colors
-![Terminal on Debian with 16 colors](https://cloud.githubusercontent.com/assets/10374559/23341713/0e8dd778-fc4d-11e6-8430-b11f161305d7.png)
-
-## Color Palette
-
-![Color Palette](https://cloud.githubusercontent.com/assets/10374559/23341312/1961f416-fc45-11e6-83ba-d7180c5fdd6d.png)
+![Screenshot](https://i.imgur.com/W1HhRwb.png)
 
 ## Installation
 
@@ -32,11 +18,11 @@
 Simply as any other Vim plugins: download manually or follow the standard procedure of your plugin manager:
 *  [Vundle](https://github.com/gmarik/vundle)
  ```
- Plugin 'tomasiser/vim-code-dark'
+ Plugin 'jam1garner/vim-code-monokai'
  ```
 *  [vim-plug](https://github.com/junegunn/vim-plug)
 ```
-Plug 'tomasiser/vim-code-dark'
+Plug 'jam1garner/vim-code-monokai'
 ```
 *  manual
 
