@@ -127,7 +127,7 @@ hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE g
 hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 " Support git gutter colors
-hi GitGutterAdd ctermfg=40 ctermbg=64 cterm=bold guifg=#009900 guibg=#46830c gui=bold
+hi GitGutterAdd ctermfg=40 ctermbg=NONE cterm=bold guifg=#009900 guibg=NONE gui=bold
 hi GitGutterChange ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#ffff00 guibg=#243955 gui=NONE
 "" ------------------
 "" Color definitions:
